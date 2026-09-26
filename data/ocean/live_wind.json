@@ -1,0 +1,8 @@
+{
+  "fetched_at": "2026-09-19T18:40:16.003358+00:00",
+  "provider": "Copernicus Climate Data Store / ECMWF ERA5",
+  "status": "OFFLINE",
+  "latency_ms": 12756.5,
+  "grid_vectors": [],
+  "hourly_series": []
+}

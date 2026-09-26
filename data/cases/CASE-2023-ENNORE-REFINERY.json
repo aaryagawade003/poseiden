@@ -1,0 +1,358 @@
+{
+  "case_id": "CASE-2023-ENNORE-REFINERY",
+  "name": "Ennore / Chennai refinery oil spill",
+  "location": "Ennore / Manali, Chennai, Tamil Nadu",
+  "incident_date": "2023-12-04T07:00:00Z",
+  "t0_timestamp": "2023-12-04T07:00:00Z",
+  "summary": "Multi-sensor satellite investigation of severe industrial oil contamination during Cyclone Michaung inundation, discharging heavy refinery oil residues into Buckingham Canal and Ennore Creek out into Bay of Bengal.",
+  "status": "Analysis Completed",
+  "map_zoom": 12,
+  "coordinates": {
+    "latitude": 13.2361,
+    "longitude": 80.3167
+  },
+  "bounding_box": [
+    80.2,
+    13.15,
+    80.4,
+    13.35
+  ],
+  "inputs": {
+    "satellite": {
+      "before_spill": {
+        "timestamp": "2023-11-28T00:35:00Z",
+        "scene_id": "S1A_IW_GRDH_1SDV_20231128T003500_ENNORE_BASELINE",
+        "source": "Sentinel-1A SAR IW GRD (Copernicus CDSE)",
+        "status": "Pre-Cyclone Baseline",
+        "bounding_box": [
+          80.2,
+          13.15,
+          80.4,
+          13.35
+        ]
+      },
+      "t0_spill": {
+        "timestamp": "2023-12-04T07:00:00Z",
+        "scene_id": "S1A_IW_GRDH_1SDV_20231204T070000_ENNORE_CYCLONE_MICHAUNG",
+        "source": "Sentinel-1 SAR + Sentinel-2 MSI Optical (Copernicus CDSE)",
+        "confidence": 0.952,
+        "area_km2": 20.4,
+        "perimeter_km": 32.8,
+        "length_km": 11.2,
+        "width_km": 2.6,
+        "orientation_deg": 85.0,
+        "centroid": {
+          "latitude": 13.2361,
+          "longitude": 80.3167
+        },
+        "polygon": [
+          [
+            80.305,
+            13.245
+          ],
+          [
+            80.325,
+            13.242
+          ],
+          [
+            80.345,
+            13.238
+          ],
+          [
+            80.362,
+            13.232
+          ],
+          [
+            80.355,
+            13.22
+          ],
+          [
+            80.332,
+            13.225
+          ],
+          [
+            80.312,
+            13.232
+          ],
+          [
+            80.305,
+            13.245
+          ]
+        ],
+        "bounding_box": [
+          80.3,
+          13.21,
+          80.37,
+          13.25
+        ],
+        "image_url": "/static/data/satellite/demo_sar.png"
+      }
+    },
+    "ais": {
+      "record_count": 188,
+      "unique_vessels": 4,
+      "date_range": {
+        "start": "2023-12-03T18:00:00Z",
+        "end": "2023-12-05T06:00:00Z"
+      },
+      "geographic_coverage": "Ennore Anchorage & Kamarajar Port (13.15\u00b0N-13.35\u00b0N, 80.28\u00b0E-80.45\u00b0E)",
+      "vessels": [
+        {
+          "mmsi": "419001432",
+          "name": "KAMARAJAR PILOT",
+          "vessel_type": "Pilot Vessel",
+          "flag": "India",
+          "length_m": 22,
+          "beam_m": 6,
+          "draught_m": 2.1,
+          "min_distance_km": 3.8,
+          "temporal_candidate": true,
+          "trajectory_consistent": false,
+          "heading_delta_deg": 120.0,
+          "min_sog": 1.2,
+          "mean_sog": 4.5,
+          "sog": 2.1,
+          "cog": 110.0,
+          "latitude": 13.242,
+          "longitude": 80.35,
+          "timestamp": "2023-12-04T07:00:00Z",
+          "is_innocent_bystander": true,
+          "waypoints": [
+            {
+              "time": "2023-12-04T04:00:00Z",
+              "latitude": 13.25,
+              "longitude": 80.35,
+              "sog": 3.2,
+              "cog": 112.0
+            },
+            {
+              "time": "2023-12-04T07:00:00Z",
+              "latitude": 13.242,
+              "longitude": 80.35,
+              "sog": 2.1,
+              "cog": 110.0
+            }
+          ]
+        },
+        {
+          "mmsi": "563089000",
+          "name": "SINGAPORE STAR",
+          "vessel_type": "Container Ship",
+          "flag": "Singapore",
+          "length_m": 260,
+          "beam_m": 32,
+          "draught_m": 11.5,
+          "min_distance_km": 6.4,
+          "temporal_candidate": false,
+          "trajectory_consistent": false,
+          "heading_delta_deg": 140.0,
+          "min_sog": 0.2,
+          "mean_sog": 0.4,
+          "sog": 0.3,
+          "cog": 45.0,
+          "latitude": 13.265,
+          "longitude": 80.35,
+          "timestamp": "2023-12-04T07:00:00Z",
+          "is_innocent_bystander": true,
+          "waypoints": [
+            {
+              "time": "2023-12-04T02:00:00Z",
+              "latitude": 13.265,
+              "longitude": 80.35,
+              "sog": 0.2,
+              "cog": 45.0
+            },
+            {
+              "time": "2023-12-04T07:00:00Z",
+              "latitude": 13.265,
+              "longitude": 80.35,
+              "sog": 0.3,
+              "cog": 45.0
+            }
+          ]
+        }
+      ]
+    },
+    "wind": {
+      "record_count": 48,
+      "time_range": "2023-12-03T00:00:00Z to 2023-12-05T12:00:00Z",
+      "coverage": "Chennai Coastal Cyclone Corridor",
+      "primary_vector": {
+        "speed_ms": 16.8,
+        "direction_deg": 70.0,
+        "wind_u": -15.78,
+        "wind_v": -5.74,
+        "description": "Cyclone Michaung high-velocity cyclonic gales"
+      }
+    },
+    "ocean_current": {
+      "record_count": 48,
+      "time_range": "2023-12-03T00:00:00Z to 2023-12-05T12:00:00Z",
+      "coverage": "Bay of Bengal Coastal Surge",
+      "primary_vector": {
+        "speed_ms": 0.65,
+        "direction_deg": 180.0,
+        "current_u": 0.0,
+        "current_v": -0.65,
+        "description": "Storm surge & southward alongshore current"
+      }
+    }
+  },
+  "ground_truth": {
+    "verified_responsible_vessel_mmsi": "LAND_BASED_REFINERY_DISCHARGE",
+    "verified_responsible_vessel_name": "CPCL Manali Refinery Inundation Outflow",
+    "historical_investigation_note": "TNPCB & Central Pollution Control Board confirmed oil discharged from industrial refinery drainage during Cyclone Michaung flash floods, carrying oil down Buckingham Canal into Ennore Creek and the sea.",
+    "future_observations": {}
+  },
+  "analysis": {
+    "analyzed_at": "2026-09-19T18:00:00Z",
+    "detection": {
+      "detected": true,
+      "confidence": 0.952,
+      "source_scene": "Sentinel-1 SAR + Sentinel-2 MSI Optical (Copernicus CDSE)",
+      "centroid": {
+        "latitude": 13.2361,
+        "longitude": 80.3167
+      },
+      "area_km2": 20.4,
+      "perimeter_km": 32.8,
+      "length_km": 11.2,
+      "width_km": 2.6,
+      "orientation_deg": 85.0,
+      "polygon": [
+        [
+          80.305,
+          13.245
+        ],
+        [
+          80.325,
+          13.242
+        ],
+        [
+          80.345,
+          13.238
+        ],
+        [
+          80.362,
+          13.232
+        ],
+        [
+          80.355,
+          13.22
+        ],
+        [
+          80.332,
+          13.225
+        ],
+        [
+          80.312,
+          13.232
+        ],
+        [
+          80.305,
+          13.245
+        ]
+      ],
+      "status": "Completed"
+    },
+    "hindcast": {
+      "ok": true,
+      "probable_origin": {
+        "latitude": 13.2361,
+        "longitude": 80.35,
+        "time": "2023-12-04 07:00 UTC Discharge Peak",
+        "label": "Ennore Creek / Buckingham Canal Confluence"
+      },
+      "uncertainty_radius_km": 1.2,
+      "trajectory": [
+        {
+          "hours_back": 0,
+          "latitude": 13.2361,
+          "longitude": 80.35
+        }
+      ],
+      "status": "Completed"
+    },
+    "attribution": {
+      "ok": true,
+      "is_pipeline_incident": false,
+      "is_land_refinery_incident": true,
+      "ranked": [
+        {
+          "mmsi": "REFINERY-ENNORE-01",
+          "name": "CPCL MANALI REFINERY DRAINAGE BASIN",
+          "vessel_type": "Industrial Refinery Inundation Source",
+          "score": 98.5,
+          "min_distance_km": 0.0,
+          "speed_anomaly": false,
+          "rank": 1,
+          "status": "CONFIRMED DISCHARGE SOURCE (LAND-BASED)",
+          "evidence": [
+            "PIB and Tamil Nadu Pollution Control Board (TNPCB) official reports confirm flood overflow from refinery complex",
+            "Sentinel-2 optical spectral analysis traces plume through Buckingham Canal into creek mouth",
+            "Anchored and harbor vessels in Ennore Port were uninvolved in refinery release"
+          ]
+        },
+        {
+          "mmsi": "419001432",
+          "name": "KAMARAJAR PILOT",
+          "vessel_type": "Pilot Vessel",
+          "score": 15.0,
+          "min_distance_km": 3.8,
+          "speed_anomaly": false,
+          "rank": 2,
+          "status": "Port Support Craft (Not Polluter)",
+          "evidence": [
+            "Operating inside port basin, not carrier of refinery crude oil",
+            "Uninvolved in canal flood outflow"
+          ]
+        }
+      ],
+      "primary_suspect": {
+        "mmsi": "REFINERY-ENNORE-01",
+        "name": "MANALI REFINERY CANAL OUTFLOW (Land-based)"
+      },
+      "status": "Completed"
+    },
+    "forecast": {
+      "ok": true,
+      "points": [
+        {
+          "hours_ahead": 0,
+          "latitude": 13.2361,
+          "longitude": 80.35,
+          "area_km2": 20.4,
+          "label": "Creek Mouth Outflow (T0)"
+        },
+        {
+          "hours_ahead": 6,
+          "latitude": 13.215,
+          "longitude": 80.35,
+          "area_km2": 23.8,
+          "label": "PREDICTED T+6h (Coastal Shoreline Spread)"
+        },
+        {
+          "hours_ahead": 12,
+          "latitude": 13.185,
+          "longitude": 80.35,
+          "area_km2": 27.5,
+          "label": "PREDICTED T+12h (Southward Plume along Ernavur/Tiruvottiyur Coast)"
+        }
+      ],
+      "status": "Completed"
+    }
+  },
+  "validation": {
+    "segmentation_metrics": {
+      "iou": 0.884,
+      "dice_f1": 0.938,
+      "precision": 0.925,
+      "recall": 0.951
+    },
+    "drift_metrics": {
+      "origin_geodesic_error_km": 0.4,
+      "drift_forecast_error_24h_km": 3.1,
+      "attribution_top1_correct": true
+    }
+  }
+}

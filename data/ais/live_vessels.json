@@ -1,0 +1,8 @@
+{
+  "fetched_at": "2026-09-19T18:40:16.085641+00:00",
+  "provider": "VesselFinder AIS API",
+  "status": "UNAVAILABLE",
+  "latency_ms": 0.0,
+  "vessel_count": 0,
+  "vessels": []
+}

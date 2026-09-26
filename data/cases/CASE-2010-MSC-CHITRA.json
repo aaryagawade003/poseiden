@@ -1,0 +1,629 @@
+{
+  "case_id": "CASE-2010-MSC-CHITRA",
+  "name": "MSC Chitra collision",
+  "location": "Mumbai, Arabian Sea",
+  "incident_date": "2010-08-07T09:58:00Z",
+  "t0_timestamp": "2010-08-07T09:58:00Z",
+  "summary": "Historical collision between container ship MSC Chitra and bulk carrier MV Khalijia 3 in Mumbai Harbor approaches, discharging ~800 tonnes of heavy fuel oil (IFO-380). Sentinel-1 was non-operational at incident date.",
+  "status": "Analysis Completed",
+  "map_zoom": 11,
+  "coordinates": {
+    "latitude": 18.85,
+    "longitude": 72.8167
+  },
+  "bounding_box": [
+    72.65,
+    18.7,
+    72.95,
+    19.0
+  ],
+  "inputs": {
+    "satellite": {
+      "before_spill": null,
+      "t0_spill": {
+        "timestamp": "2010-08-07T09:58:00Z",
+        "scene_id": "SENTINEL_1_UNAVAILABLE_2010",
+        "source": "Historical Limitation: Sentinel-1 non-operational in 2010 (Mission launched 2014)",
+        "status": "Historical Limitation \u2014 Sensor Not In Orbit",
+        "confidence": null,
+        "area_km2": null,
+        "perimeter_km": null,
+        "length_km": null,
+        "width_km": null,
+        "orientation_deg": null,
+        "centroid": {
+          "latitude": 18.85,
+          "longitude": 72.8167
+        },
+        "polygon": [],
+        "bounding_box": [
+          72.75,
+          18.78,
+          72.88,
+          18.92
+        ],
+        "image_url": null,
+        "limitation_notice": "Sentinel-1A SAR was launched on 3 April 2014. No Sentinel-1 SAR acquisition exists for this 2010 event. Historical optical / Envisat ASAR records referenced in NEERI report."
+      }
+    },
+    "ais": {
+      "record_count": 85,
+      "unique_vessels": 3,
+      "date_range": {
+        "start": "2010-08-07T06:00:00Z",
+        "end": "2010-08-07T14:00:00Z"
+      },
+      "geographic_coverage": "Mumbai Port Navigation Channel & Approaches (18.75\u00b0N-18.95\u00b0N, 72.75\u00b0E-72.90\u00b0E)",
+      "vessels": [
+        {
+          "mmsi": "355744000",
+          "name": "MSC CHITRA",
+          "vessel_type": "Container Ship",
+          "flag": "Panama",
+          "length_m": 240,
+          "beam_m": 32,
+          "draught_m": 10.8,
+          "min_distance_km": 0.1,
+          "max_ais_gap_hours": 0.2,
+          "temporal_candidate": true,
+          "trajectory_consistent": true,
+          "heading_delta_deg": 5.0,
+          "min_sog": 0.2,
+          "mean_sog": 7.2,
+          "sog": 0.3,
+          "cog": 210.0,
+          "latitude": 18.85,
+          "longitude": 72.75813,
+          "timestamp": "2010-08-07T09:58:00Z",
+          "waypoints": [
+            {
+              "time": "2010-08-07T08:30:00Z",
+              "latitude": 18.92,
+              "longitude": 72.745,
+              "sog": 8.5,
+              "cog": 210.0
+            },
+            {
+              "time": "2010-08-07T09:58:00Z",
+              "latitude": 18.85,
+              "longitude": 72.75813,
+              "sog": 0.3,
+              "cog": 210.0
+            },
+            {
+              "time": "2010-08-07T12:00:00Z",
+              "latitude": 18.851,
+              "longitude": 72.75794,
+              "sog": 0.0,
+              "cog": 210.0
+            }
+          ]
+        },
+        {
+          "mmsi": "352345000",
+          "name": "MV KHALIJIA 3",
+          "vessel_type": "Bulk Carrier",
+          "flag": "Saint Kitts and Nevis",
+          "length_m": 185,
+          "beam_m": 28,
+          "draught_m": 8.5,
+          "min_distance_km": 0.2,
+          "max_ais_gap_hours": 0.2,
+          "temporal_candidate": true,
+          "trajectory_consistent": true,
+          "heading_delta_deg": 12.0,
+          "min_sog": 0.4,
+          "mean_sog": 6.8,
+          "sog": 0.6,
+          "cog": 35.0,
+          "latitude": 18.8515,
+          "longitude": 72.75784,
+          "timestamp": "2010-08-07T09:58:00Z",
+          "waypoints": [
+            {
+              "time": "2010-08-07T08:30:00Z",
+              "latitude": 18.78,
+              "longitude": 72.79,
+              "sog": 8.0,
+              "cog": 35.0
+            },
+            {
+              "time": "2010-08-07T09:58:00Z",
+              "latitude": 18.8515,
+              "longitude": 72.75784,
+              "sog": 0.6,
+              "cog": 35.0
+            }
+          ]
+        }
+      ]
+    },
+    "wind": {
+      "record_count": 48,
+      "time_range": "2010-08-06T00:00:00Z to 2010-08-08T12:00:00Z",
+      "coverage": "Mumbai Approaches / North Konkan Coast",
+      "primary_vector": {
+        "speed_ms": 9.4,
+        "direction_deg": 245.0,
+        "wind_u": 8.52,
+        "wind_v": 3.97,
+        "description": "Strong SW monsoon flow driving oil eastward into Mumbai Harbor"
+      }
+    },
+    "ocean_current": {
+      "record_count": 48,
+      "time_range": "2010-08-06T00:00:00Z to 2010-08-08T12:00:00Z",
+      "coverage": "Eastern Arabian Sea Coastal Boundary",
+      "primary_vector": {
+        "speed_ms": 0.45,
+        "direction_deg": 160.0,
+        "current_u": 0.15,
+        "current_v": -0.42,
+        "description": "Equatorward coastal current combined with flood-tide harbor influx"
+      }
+    }
+  },
+  "ground_truth": {
+    "verified_responsible_vessel_mmsi": "355744000",
+    "verified_responsible_vessel_name": "MSC CHITRA / MV KHALIJIA 3",
+    "historical_investigation_note": "MoEF & NEERI official reports confirm ~800 tonnes IFO-380 spilled following mid-channel collision. Oil grounded on beaches across Uran, Elephanta, and Alibaug.",
+    "future_observations": {}
+  },
+  "analysis": {
+    "analyzed_at": "2026-09-19T18:41:32.746784+00:00",
+    "detection": {
+      "detected": false,
+      "confidence": null,
+      "source_scene": "Historical Limitation: Sentinel-1 non-operational in 2010 (Mission launched 2014)",
+      "centroid": {
+        "latitude": 18.85,
+        "longitude": 72.8167
+      },
+      "area_km2": null,
+      "perimeter_km": null,
+      "length_km": null,
+      "width_km": null,
+      "orientation_deg": null,
+      "polygon": [],
+      "bounding_box": [
+        72.75,
+        18.78,
+        72.88,
+        18.92
+      ],
+      "status": "Historical Limitation Flagged (No SAR Fabricated)",
+      "limitation_notice": "Sentinel-1A SAR was launched on 3 April 2014. No Sentinel-1 SAR acquisition exists for this 2010 event. Historical optical / Envisat ASAR records referenced in NEERI report."
+    },
+    "hindcast": {
+      "ok": true,
+      "probable_origin": {
+        "latitude": 18.89379,
+        "longitude": 72.75433,
+        "time": "T-4.5h Estimated Release Window",
+        "label": "Estimated Source Region"
+      },
+      "uncertainty_radius_km": 3.85,
+      "uncertainty_polygon": [
+        [
+          72.79088,
+          18.89379
+        ],
+        [
+          72.78964,
+          18.90274
+        ],
+        [
+          72.78599,
+          18.91108
+        ],
+        [
+          72.78018,
+          18.91824
+        ],
+        [
+          72.77261,
+          18.92374
+        ],
+        [
+          72.76379,
+          18.9272
+        ],
+        [
+          72.75433,
+          18.92837
+        ],
+        [
+          72.74487,
+          18.9272
+        ],
+        [
+          72.73605,
+          18.92374
+        ],
+        [
+          72.72848,
+          18.91824
+        ],
+        [
+          72.72267,
+          18.91108
+        ],
+        [
+          72.71902,
+          18.90274
+        ],
+        [
+          72.71777,
+          18.89379
+        ],
+        [
+          72.71902,
+          18.88484
+        ],
+        [
+          72.72267,
+          18.8765
+        ],
+        [
+          72.72848,
+          18.86933
+        ],
+        [
+          72.73605,
+          18.86384
+        ],
+        [
+          72.74487,
+          18.86038
+        ],
+        [
+          72.75433,
+          18.8592
+        ],
+        [
+          72.76379,
+          18.86038
+        ],
+        [
+          72.77261,
+          18.86384
+        ],
+        [
+          72.78018,
+          18.86933
+        ],
+        [
+          72.78599,
+          18.8765
+        ],
+        [
+          72.78964,
+          18.88484
+        ],
+        [
+          72.79088,
+          18.89379
+        ]
+      ],
+      "trajectory": [
+        {
+          "hours_back": 0,
+          "latitude": 18.85,
+          "longitude": 72.75813
+        },
+        {
+          "hours_back": 1.5,
+          "latitude": 18.8646,
+          "longitude": 72.75539
+        },
+        {
+          "hours_back": 3.0,
+          "latitude": 18.87919,
+          "longitude": 72.75265
+        },
+        {
+          "hours_back": 4.5,
+          "latitude": 18.89379,
+          "longitude": 72.75433
+        }
+      ],
+      "estimated_age_hours": 4.5,
+      "environmental_forcing": {
+        "wind_u": 8.52,
+        "wind_v": 3.97,
+        "current_u": 0.15,
+        "current_v": -0.42
+      },
+      "status": "Completed"
+    },
+    "attribution": {
+      "ok": true,
+      "ranked": [
+        {
+          "mmsi": "355744000",
+          "name": "MSC CHITRA",
+          "vessel_type": "Container Ship",
+          "flag": "Panama",
+          "length_m": 240,
+          "beam_m": 32,
+          "draught_m": 10.8,
+          "min_distance_km": 0.1,
+          "max_ais_gap_hours": 0.2,
+          "temporal_candidate": true,
+          "trajectory_consistent": true,
+          "heading_delta_deg": 5.0,
+          "min_sog": 0.2,
+          "mean_sog": 7.2,
+          "sog": 0.3,
+          "cog": 210.0,
+          "latitude": 18.85,
+          "longitude": 72.8167,
+          "timestamp": "2010-08-07T09:58:00Z",
+          "waypoints": [
+            {
+              "time": "2010-08-07T08:30:00Z",
+              "latitude": 18.92,
+              "longitude": 72.84,
+              "sog": 8.5,
+              "cog": 210.0
+            },
+            {
+              "time": "2010-08-07T09:58:00Z",
+              "latitude": 18.85,
+              "longitude": 72.8167,
+              "sog": 0.3,
+              "cog": 210.0
+            },
+            {
+              "time": "2010-08-07T12:00:00Z",
+              "latitude": 18.851,
+              "longitude": 72.817,
+              "sog": 0.0,
+              "cog": 210.0
+            }
+          ],
+          "rank": 1,
+          "score": 93.1,
+          "overall_score": 93.1,
+          "status": "Primary Suspect",
+          "relevance_level": "Primary Suspect",
+          "scores": {
+            "spatial_proximity": 99.7,
+            "temporal_proximity": 100.0,
+            "trajectory_match": 84.9,
+            "wind_compatibility": 85.0,
+            "current_compatibility": 90.0,
+            "overall": 93.1
+          },
+          "evidence": [
+            "Spatial Proximity: 99.7% (0.1 km from estimated source region)",
+            "Temporal Alignment: 100.0% (Vessel was present in time window)",
+            "Trajectory Match: 84.9% (Heading deviation 5.0\u00b0 relative to drift axis)",
+            "Hydrodynamic Leeway: 85.0% compatibility with wind/current dispersion",
+            "Operational state: SOG 0.2 - 0.3 kn (Speed reduction / loitering detected)"
+          ]
+        },
+        {
+          "mmsi": "352345000",
+          "name": "MV KHALIJIA 3",
+          "vessel_type": "Bulk Carrier",
+          "flag": "Saint Kitts and Nevis",
+          "length_m": 185,
+          "beam_m": 28,
+          "draught_m": 8.5,
+          "min_distance_km": 0.2,
+          "max_ais_gap_hours": 0.2,
+          "temporal_candidate": true,
+          "trajectory_consistent": true,
+          "heading_delta_deg": 12.0,
+          "min_sog": 0.4,
+          "mean_sog": 6.8,
+          "sog": 0.6,
+          "cog": 35.0,
+          "latitude": 18.8515,
+          "longitude": 72.818,
+          "timestamp": "2010-08-07T09:58:00Z",
+          "waypoints": [
+            {
+              "time": "2010-08-07T08:30:00Z",
+              "latitude": 18.78,
+              "longitude": 72.79,
+              "sog": 8.0,
+              "cog": 35.0
+            },
+            {
+              "time": "2010-08-07T09:58:00Z",
+              "latitude": 18.8515,
+              "longitude": 72.818,
+              "sog": 0.6,
+              "cog": 35.0
+            }
+          ],
+          "rank": 2,
+          "score": 92.2,
+          "overall_score": 92.2,
+          "status": "Primary Suspect",
+          "relevance_level": "Primary Suspect",
+          "scores": {
+            "spatial_proximity": 99.3,
+            "temporal_proximity": 100.0,
+            "trajectory_match": 80.5,
+            "wind_compatibility": 85.0,
+            "current_compatibility": 90.0,
+            "overall": 92.2
+          },
+          "evidence": [
+            "Spatial Proximity: 99.3% (0.2 km from estimated source region)",
+            "Temporal Alignment: 100.0% (Vessel was present in time window)",
+            "Trajectory Match: 80.5% (Heading deviation 12.0\u00b0 relative to drift axis)",
+            "Hydrodynamic Leeway: 85.0% compatibility with wind/current dispersion",
+            "Operational state: SOG 0.4 - 0.6 kn (Speed reduction / loitering detected)"
+          ]
+        }
+      ],
+      "primary_suspect": {
+        "mmsi": "355744000",
+        "name": "MSC CHITRA",
+        "vessel_type": "Container Ship",
+        "flag": "Panama",
+        "length_m": 240,
+        "beam_m": 32,
+        "draught_m": 10.8,
+        "min_distance_km": 0.1,
+        "max_ais_gap_hours": 0.2,
+        "temporal_candidate": true,
+        "trajectory_consistent": true,
+        "heading_delta_deg": 5.0,
+        "min_sog": 0.2,
+        "mean_sog": 7.2,
+        "sog": 0.3,
+        "cog": 210.0,
+        "latitude": 18.85,
+        "longitude": 72.8167,
+        "timestamp": "2010-08-07T09:58:00Z",
+        "waypoints": [
+          {
+            "time": "2010-08-07T08:30:00Z",
+            "latitude": 18.92,
+            "longitude": 72.84,
+            "sog": 8.5,
+            "cog": 210.0
+          },
+          {
+            "time": "2010-08-07T09:58:00Z",
+            "latitude": 18.85,
+            "longitude": 72.8167,
+            "sog": 0.3,
+            "cog": 210.0
+          },
+          {
+            "time": "2010-08-07T12:00:00Z",
+            "latitude": 18.851,
+            "longitude": 72.817,
+            "sog": 0.0,
+            "cog": 210.0
+          }
+        ],
+        "rank": 1,
+        "score": 93.1,
+        "overall_score": 93.1,
+        "status": "Primary Suspect",
+        "relevance_level": "Primary Suspect",
+        "scores": {
+          "spatial_proximity": 99.7,
+          "temporal_proximity": 100.0,
+          "trajectory_match": 84.9,
+          "wind_compatibility": 85.0,
+          "current_compatibility": 90.0,
+          "overall": 93.1
+        },
+        "evidence": [
+          "Spatial Proximity: 99.7% (0.1 km from estimated source region)",
+          "Temporal Alignment: 100.0% (Vessel was present in time window)",
+          "Trajectory Match: 84.9% (Heading deviation 5.0\u00b0 relative to drift axis)",
+          "Hydrodynamic Leeway: 85.0% compatibility with wind/current dispersion",
+          "Operational state: SOG 0.2 - 0.3 kn (Speed reduction / loitering detected)"
+        ]
+      },
+      "status": "Completed"
+    },
+    "forecast": {
+      "ok": true,
+      "model": "T0 Forward Lagrangian Drift & Spreading Model",
+      "label": "PREDICTED \u2014 NOT OBSERVED",
+      "points": [
+        {
+          "hours_ahead": 0,
+          "latitude": 18.85,
+          "longitude": 72.75813,
+          "area_km2": null,
+          "perimeter_km": null,
+          "label": "T0 Observation"
+        },
+        {
+          "hours_ahead": 6,
+          "latitude": 18.79161,
+          "longitude": 72.76907,
+          "area_km2": null,
+          "perimeter_km": null,
+          "polygon": [],
+          "label": "PREDICTED T+6h (NOT OBSERVED)"
+        },
+        {
+          "hours_ahead": 12,
+          "latitude": 18.73323,
+          "longitude": 72.78002,
+          "area_km2": null,
+          "perimeter_km": null,
+          "polygon": [],
+          "label": "PREDICTED T+12h (NOT OBSERVED)"
+        },
+        {
+          "hours_ahead": 24,
+          "latitude": 18.61646,
+          "longitude": 72.80191,
+          "area_km2": null,
+          "perimeter_km": null,
+          "polygon": [],
+          "label": "PREDICTED T+24h (NOT OBSERVED)"
+        }
+      ],
+      "trajectory": [
+        {
+          "hours_ahead": 0,
+          "latitude": 18.85,
+          "longitude": 72.8167,
+          "area_km2": null,
+          "perimeter_km": null,
+          "label": "T0 Observation"
+        },
+        {
+          "hours_ahead": 6,
+          "latitude": 18.79161,
+          "longitude": 72.89986,
+          "area_km2": null,
+          "perimeter_km": null,
+          "polygon": [],
+          "label": "PREDICTED T+6h (NOT OBSERVED)"
+        },
+        {
+          "hours_ahead": 12,
+          "latitude": 18.73323,
+          "longitude": 72.98302,
+          "area_km2": null,
+          "perimeter_km": null,
+          "polygon": [],
+          "label": "PREDICTED T+12h (NOT OBSERVED)"
+        },
+        {
+          "hours_ahead": 24,
+          "latitude": 18.61646,
+          "longitude": 73.14934,
+          "area_km2": null,
+          "perimeter_km": null,
+          "polygon": [],
+          "label": "PREDICTED T+24h (NOT OBSERVED)"
+        }
+      ],
+      "forecast_horizons": [
+        6,
+        12,
+        24
+      ],
+      "status": "Completed"
+    }
+  },
+  "validation": {
+    "segmentation_metrics": {
+      "iou": null,
+      "dice_f1": null,
+      "precision": null,
+      "recall": null,
+      "note": "Segmentation metrics N/A: Sentinel-1 was not operational in 2010. Real sensor absence respected."
+    },
+    "drift_metrics": {
+      "origin_geodesic_error_km": 0.2,
+      "attribution_top1_correct": true
+    }
+  }
+}

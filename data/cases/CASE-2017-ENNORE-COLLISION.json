@@ -1,0 +1,1149 @@
+{
+  "case_id": "CASE-2017-ENNORE-COLLISION",
+  "name": "Ennore / Chennai ship collision",
+  "location": "Ennore / Kamarajar Port, Chennai, Tamil Nadu",
+  "incident_date": "2017-01-28T04:00:00Z",
+  "t0_timestamp": "2017-01-28T04:00:00Z",
+  "summary": "Forensic reconstruction of catastrophic collision between outbound tanker MT BW Maple and inbound vessel MT Dawn Kanchipuram off Kamarajar Port, Chennai, leading to severe coastal oiling.",
+  "status": "Analysis Completed",
+  "map_zoom": 12,
+  "coordinates": {
+    "latitude": 13.2282,
+    "longitude": 80.3633
+  },
+  "bounding_box": [
+    80.25,
+    13.12,
+    80.48,
+    13.32
+  ],
+  "inputs": {
+    "satellite": {
+      "before_spill": {
+        "timestamp": "2017-01-22T00:30:00Z",
+        "scene_id": "S1A_IW_GRDH_1SDV_20170122T003000_CHENNAI_BASELINE",
+        "source": "Sentinel-1A SAR IW GRD (Copernicus CDSE)",
+        "status": "Clean Baseline",
+        "bounding_box": [
+          80.25,
+          13.12,
+          80.48,
+          13.32
+        ]
+      },
+      "t0_spill": {
+        "timestamp": "2017-01-28T04:00:00Z",
+        "scene_id": "S1A_IW_GRDH_1SDV_20170128T040000_ENNORE_T0",
+        "source": "Sentinel-1A SAR IW GRD (Copernicus CDSE)",
+        "confidence": 0.923,
+        "area_km2": 18.5,
+        "perimeter_km": 28.2,
+        "length_km": 8.4,
+        "width_km": 2.2,
+        "orientation_deg": 195.0,
+        "centroid": {
+          "latitude": 13.2282,
+          "longitude": 80.3633
+        },
+        "polygon": [
+          [
+            80.345,
+            13.242
+          ],
+          [
+            80.368,
+            13.238
+          ],
+          [
+            80.382,
+            13.218
+          ],
+          [
+            80.375,
+            13.198
+          ],
+          [
+            80.358,
+            13.205
+          ],
+          [
+            80.345,
+            13.225
+          ],
+          [
+            80.345,
+            13.242
+          ]
+        ],
+        "bounding_box": [
+          80.34,
+          13.19,
+          80.39,
+          13.25
+        ],
+        "image_url": "/static/data/satellite/demo_sar.png"
+      }
+    },
+    "ais": {
+      "record_count": 210,
+      "unique_vessels": 4,
+      "date_range": {
+        "start": "2017-01-27T18:00:00Z",
+        "end": "2017-01-28T12:00:00Z"
+      },
+      "geographic_coverage": "Kamarajar Port Approaches (13.10\u00b0N-13.35\u00b0N, 80.25\u00b0E-80.50\u00b0E)",
+      "vessels": [
+        {
+          "mmsi": "419069700",
+          "name": "MT DAWN KANCHIPURAM",
+          "vessel_type": "Oil Products Tanker",
+          "flag": "India",
+          "length_m": 244,
+          "beam_m": 42,
+          "draught_m": 12.0,
+          "min_distance_km": 0.2,
+          "max_ais_gap_hours": 0.1,
+          "temporal_candidate": true,
+          "trajectory_consistent": true,
+          "heading_delta_deg": 8.0,
+          "min_sog": 0.4,
+          "mean_sog": 5.8,
+          "sog": 0.8,
+          "cog": 285.0,
+          "latitude": 13.2275,
+          "longitude": 80.35,
+          "timestamp": "2017-01-28T04:00:00Z",
+          "waypoints": [
+            {
+              "time": "2017-01-28T01:00:00Z",
+              "latitude": 13.21,
+              "longitude": 80.35,
+              "sog": 10.5,
+              "cog": 285.0
+            },
+            {
+              "time": "2017-01-28T03:30:00Z",
+              "latitude": 13.225,
+              "longitude": 80.35,
+              "sog": 6.2,
+              "cog": 286.0
+            },
+            {
+              "time": "2017-01-28T04:00:00Z",
+              "latitude": 13.2275,
+              "longitude": 80.35,
+              "sog": 0.8,
+              "cog": 285.0
+            },
+            {
+              "time": "2017-01-28T06:00:00Z",
+              "latitude": 13.228,
+              "longitude": 80.35,
+              "sog": 0.2,
+              "cog": 280.0
+            }
+          ]
+        },
+        {
+          "mmsi": "565256000",
+          "name": "MT BW MAPLE",
+          "vessel_type": "LPG Carrier",
+          "flag": "Singapore",
+          "length_m": 226,
+          "beam_m": 37,
+          "draught_m": 10.5,
+          "min_distance_km": 0.3,
+          "max_ais_gap_hours": 0.1,
+          "temporal_candidate": true,
+          "trajectory_consistent": true,
+          "heading_delta_deg": 14.0,
+          "min_sog": 1.2,
+          "mean_sog": 6.4,
+          "sog": 1.5,
+          "cog": 82.0,
+          "latitude": 13.2285,
+          "longitude": 80.35,
+          "timestamp": "2017-01-28T04:00:00Z",
+          "waypoints": [
+            {
+              "time": "2017-01-28T03:00:00Z",
+              "latitude": 13.235,
+              "longitude": 80.35,
+              "sog": 4.8,
+              "cog": 85.0
+            },
+            {
+              "time": "2017-01-28T04:00:00Z",
+              "latitude": 13.2285,
+              "longitude": 80.35,
+              "sog": 1.5,
+              "cog": 82.0
+            },
+            {
+              "time": "2017-01-28T06:00:00Z",
+              "latitude": 13.229,
+              "longitude": 80.35,
+              "sog": 2.1,
+              "cog": 84.0
+            }
+          ]
+        },
+        {
+          "mmsi": "419000889",
+          "name": "KAMARAJAR TUG 1",
+          "vessel_type": "Harbour Tug",
+          "flag": "India",
+          "length_m": 32,
+          "beam_m": 11,
+          "draught_m": 3.8,
+          "min_distance_km": 4.2,
+          "max_ais_gap_hours": 0.1,
+          "temporal_candidate": false,
+          "trajectory_consistent": false,
+          "heading_delta_deg": 88.0,
+          "min_sog": 2.0,
+          "mean_sog": 6.2,
+          "sog": 5.4,
+          "cog": 170.0,
+          "latitude": 13.25,
+          "longitude": 80.35,
+          "timestamp": "2017-01-28T04:00:00Z",
+          "waypoints": [
+            {
+              "time": "2017-01-28T03:00:00Z",
+              "latitude": 13.26,
+              "longitude": 80.35,
+              "sog": 6.0,
+              "cog": 172.0
+            },
+            {
+              "time": "2017-01-28T04:00:00Z",
+              "latitude": 13.25,
+              "longitude": 80.35,
+              "sog": 5.4,
+              "cog": 170.0
+            }
+          ]
+        },
+        {
+          "mmsi": "353123400",
+          "name": "OCEAN TRANSIT",
+          "vessel_type": "Container Feeder",
+          "flag": "Panama",
+          "length_m": 140,
+          "beam_m": 22,
+          "draught_m": 7.5,
+          "min_distance_km": 14.5,
+          "max_ais_gap_hours": 0.2,
+          "temporal_candidate": false,
+          "trajectory_consistent": false,
+          "heading_delta_deg": 92.0,
+          "min_sog": 12.0,
+          "mean_sog": 13.5,
+          "sog": 13.2,
+          "cog": 358.0,
+          "latitude": 13.15,
+          "longitude": 80.35,
+          "timestamp": "2017-01-28T04:00:00Z",
+          "waypoints": [
+            {
+              "time": "2017-01-28T02:00:00Z",
+              "latitude": 13.02,
+              "longitude": 80.35,
+              "sog": 13.4,
+              "cog": 358.0
+            },
+            {
+              "time": "2017-01-28T04:00:00Z",
+              "latitude": 13.15,
+              "longitude": 80.35,
+              "sog": 13.2,
+              "cog": 358.0
+            }
+          ]
+        }
+      ]
+    },
+    "wind": {
+      "record_count": 48,
+      "time_range": "2017-01-27T00:00:00Z to 2017-01-29T12:00:00Z",
+      "coverage": "North Tamil Nadu Coastal Corridor",
+      "primary_vector": {
+        "speed_ms": 4.8,
+        "direction_deg": 65.0,
+        "wind_u": -4.35,
+        "wind_v": -2.03,
+        "description": "ENE Coastal sea-breeze forcing"
+      }
+    },
+    "ocean_current": {
+      "record_count": 48,
+      "time_range": "2017-01-27T00:00:00Z to 2017-01-29T12:00:00Z",
+      "coverage": "Western Bay of Bengal Coastal Current",
+      "primary_vector": {
+        "speed_ms": 0.38,
+        "direction_deg": 195.0,
+        "current_u": -0.1,
+        "current_v": -0.37,
+        "description": "Southward East India Coastal Current (EICC) flow"
+      }
+    }
+  },
+  "ground_truth": {
+    "verified_responsible_vessel_mmsi": "419069700",
+    "verified_responsible_vessel_name": "MT DAWN KANCHIPURAM / MT BW MAPLE",
+    "historical_investigation_note": "DG Shipping inquiry confirmed collision during harbor passage between Dawn Kanchipuram and BW Maple. Heavy bunker fuel escaped through hull breach on Dawn Kanchipuram.",
+    "future_observations": {
+      "t_plus_24h": {
+        "timestamp": "2017-01-29T04:00:00Z",
+        "centroid": {
+          "latitude": 13.165,
+          "longitude": 80.345
+        },
+        "area_km2": 24.2
+      }
+    }
+  },
+  "analysis": {
+    "analyzed_at": "2026-09-19T18:41:32.723663+00:00",
+    "detection": {
+      "detected": true,
+      "confidence": 0.923,
+      "source_scene": "S1A_IW_GRDH_1SDV_20170128T040000_ENNORE_T0",
+      "centroid": {
+        "latitude": 13.2282,
+        "longitude": 80.3633
+      },
+      "area_km2": 18.5,
+      "perimeter_km": 28.2,
+      "length_km": 8.4,
+      "width_km": 2.2,
+      "orientation_deg": 195.0,
+      "polygon": [
+        [
+          80.345,
+          13.242
+        ],
+        [
+          80.368,
+          13.238
+        ],
+        [
+          80.382,
+          13.218
+        ],
+        [
+          80.375,
+          13.198
+        ],
+        [
+          80.358,
+          13.205
+        ],
+        [
+          80.345,
+          13.225
+        ],
+        [
+          80.345,
+          13.242
+        ]
+      ],
+      "bounding_box": [
+        80.34,
+        13.19,
+        80.39,
+        13.25
+      ],
+      "status": "Completed"
+    },
+    "hindcast": {
+      "ok": true,
+      "probable_origin": {
+        "latitude": 13.29091,
+        "longitude": 80.35,
+        "time": "T-4.5h Estimated Release Window",
+        "label": "Estimated Source Region"
+      },
+      "uncertainty_radius_km": 3.85,
+      "uncertainty_polygon": [
+        [
+          80.43329,
+          13.29091
+        ],
+        [
+          80.43208,
+          13.29986
+        ],
+        [
+          80.42853,
+          13.3082
+        ],
+        [
+          80.42289,
+          13.31536
+        ],
+        [
+          80.41553,
+          13.32086
+        ],
+        [
+          80.40696,
+          13.32431
+        ],
+        [
+          80.39776,
+          13.32549
+        ],
+        [
+          80.38856,
+          13.32431
+        ],
+        [
+          80.37999,
+          13.32086
+        ],
+        [
+          80.37263,
+          13.31536
+        ],
+        [
+          80.36698,
+          13.3082
+        ],
+        [
+          80.36343,
+          13.29986
+        ],
+        [
+          80.36222,
+          13.29091
+        ],
+        [
+          80.36343,
+          13.28196
+        ],
+        [
+          80.36698,
+          13.27361
+        ],
+        [
+          80.37263,
+          13.26645
+        ],
+        [
+          80.37999,
+          13.26096
+        ],
+        [
+          80.38856,
+          13.2575
+        ],
+        [
+          80.39776,
+          13.25632
+        ],
+        [
+          80.40696,
+          13.2575
+        ],
+        [
+          80.41553,
+          13.26096
+        ],
+        [
+          80.42289,
+          13.26645
+        ],
+        [
+          80.42853,
+          13.27361
+        ],
+        [
+          80.43208,
+          13.28196
+        ],
+        [
+          80.43329,
+          13.29091
+        ]
+      ],
+      "trajectory": [
+        {
+          "hours_back": 0,
+          "latitude": 13.2282,
+          "longitude": 80.35
+        },
+        {
+          "hours_back": 1.5,
+          "latitude": 13.2491,
+          "longitude": 80.35
+        },
+        {
+          "hours_back": 3.0,
+          "latitude": 13.27,
+          "longitude": 80.35
+        },
+        {
+          "hours_back": 4.5,
+          "latitude": 13.29091,
+          "longitude": 80.35
+        }
+      ],
+      "estimated_age_hours": 4.5,
+      "environmental_forcing": {
+        "wind_u": -4.35,
+        "wind_v": -2.03,
+        "current_u": -0.1,
+        "current_v": -0.37
+      },
+      "status": "Completed"
+    },
+    "attribution": {
+      "ok": true,
+      "ranked": [
+        {
+          "mmsi": "419069700",
+          "name": "MT DAWN KANCHIPURAM",
+          "vessel_type": "Oil Products Tanker",
+          "flag": "India",
+          "length_m": 244,
+          "beam_m": 42,
+          "draught_m": 12.0,
+          "min_distance_km": 0.2,
+          "max_ais_gap_hours": 0.1,
+          "temporal_candidate": true,
+          "trajectory_consistent": true,
+          "heading_delta_deg": 8.0,
+          "min_sog": 0.4,
+          "mean_sog": 5.8,
+          "sog": 0.8,
+          "cog": 285.0,
+          "latitude": 13.2275,
+          "longitude": 80.3628,
+          "timestamp": "2017-01-28T04:00:00Z",
+          "waypoints": [
+            {
+              "time": "2017-01-28T01:00:00Z",
+              "latitude": 13.21,
+              "longitude": 80.45,
+              "sog": 10.5,
+              "cog": 285.0
+            },
+            {
+              "time": "2017-01-28T03:30:00Z",
+              "latitude": 13.225,
+              "longitude": 80.38,
+              "sog": 6.2,
+              "cog": 286.0
+            },
+            {
+              "time": "2017-01-28T04:00:00Z",
+              "latitude": 13.2275,
+              "longitude": 80.3628,
+              "sog": 0.8,
+              "cog": 285.0
+            },
+            {
+              "time": "2017-01-28T06:00:00Z",
+              "latitude": 13.228,
+              "longitude": 80.363,
+              "sog": 0.2,
+              "cog": 280.0
+            }
+          ],
+          "rank": 1,
+          "score": 92.7,
+          "overall_score": 92.7,
+          "status": "Primary Suspect",
+          "relevance_level": "Primary Suspect",
+          "scores": {
+            "spatial_proximity": 99.3,
+            "temporal_proximity": 100.0,
+            "trajectory_match": 83.0,
+            "wind_compatibility": 85.0,
+            "current_compatibility": 90.0,
+            "overall": 92.7
+          },
+          "evidence": [
+            "Spatial Proximity: 99.3% (0.2 km from estimated source region)",
+            "Temporal Alignment: 100.0% (Vessel was present in time window)",
+            "Trajectory Match: 83.0% (Heading deviation 8.0\u00b0 relative to drift axis)",
+            "Hydrodynamic Leeway: 85.0% compatibility with wind/current dispersion",
+            "Operational state: SOG 0.4 - 0.8 kn (Speed reduction / loitering detected)"
+          ]
+        },
+        {
+          "mmsi": "565256000",
+          "name": "MT BW MAPLE",
+          "vessel_type": "LPG Carrier",
+          "flag": "Singapore",
+          "length_m": 226,
+          "beam_m": 37,
+          "draught_m": 10.5,
+          "min_distance_km": 0.3,
+          "max_ais_gap_hours": 0.1,
+          "temporal_candidate": true,
+          "trajectory_consistent": true,
+          "heading_delta_deg": 14.0,
+          "min_sog": 1.2,
+          "mean_sog": 6.4,
+          "sog": 1.5,
+          "cog": 82.0,
+          "latitude": 13.2285,
+          "longitude": 80.3645,
+          "timestamp": "2017-01-28T04:00:00Z",
+          "waypoints": [
+            {
+              "time": "2017-01-28T03:00:00Z",
+              "latitude": 13.235,
+              "longitude": 80.33,
+              "sog": 4.8,
+              "cog": 85.0
+            },
+            {
+              "time": "2017-01-28T04:00:00Z",
+              "latitude": 13.2285,
+              "longitude": 80.3645,
+              "sog": 1.5,
+              "cog": 82.0
+            },
+            {
+              "time": "2017-01-28T06:00:00Z",
+              "latitude": 13.229,
+              "longitude": 80.38,
+              "sog": 2.1,
+              "cog": 84.0
+            }
+          ],
+          "rank": 2,
+          "score": 91.8,
+          "overall_score": 91.8,
+          "status": "Primary Suspect",
+          "relevance_level": "Primary Suspect",
+          "scores": {
+            "spatial_proximity": 99.0,
+            "temporal_proximity": 100.0,
+            "trajectory_match": 79.2,
+            "wind_compatibility": 85.0,
+            "current_compatibility": 90.0,
+            "overall": 91.8
+          },
+          "evidence": [
+            "Spatial Proximity: 99.0% (0.3 km from estimated source region)",
+            "Temporal Alignment: 100.0% (Vessel was present in time window)",
+            "Trajectory Match: 79.2% (Heading deviation 14.0\u00b0 relative to drift axis)",
+            "Hydrodynamic Leeway: 85.0% compatibility with wind/current dispersion",
+            "Operational state: SOG 1.2 - 1.5 kn (Speed reduction / loitering detected)"
+          ]
+        },
+        {
+          "mmsi": "419000889",
+          "name": "KAMARAJAR TUG 1",
+          "vessel_type": "Harbour Tug",
+          "flag": "India",
+          "length_m": 32,
+          "beam_m": 11,
+          "draught_m": 3.8,
+          "min_distance_km": 4.2,
+          "max_ais_gap_hours": 0.1,
+          "temporal_candidate": false,
+          "trajectory_consistent": false,
+          "heading_delta_deg": 88.0,
+          "min_sog": 2.0,
+          "mean_sog": 6.2,
+          "sog": 5.4,
+          "cog": 170.0,
+          "latitude": 13.25,
+          "longitude": 80.34,
+          "timestamp": "2017-01-28T04:00:00Z",
+          "waypoints": [
+            {
+              "time": "2017-01-28T03:00:00Z",
+              "latitude": 13.26,
+              "longitude": 80.34,
+              "sog": 6.0,
+              "cog": 172.0
+            },
+            {
+              "time": "2017-01-28T04:00:00Z",
+              "latitude": 13.25,
+              "longitude": 80.34,
+              "sog": 5.4,
+              "cog": 170.0
+            }
+          ],
+          "rank": 3,
+          "score": 54.2,
+          "overall_score": 54.2,
+          "status": "Moderate Relevance",
+          "relevance_level": "Moderate Relevance",
+          "scores": {
+            "spatial_proximity": 86.0,
+            "temporal_proximity": 35.0,
+            "trajectory_match": 14.9,
+            "wind_compatibility": 85.0,
+            "current_compatibility": 55.0,
+            "overall": 54.2
+          },
+          "evidence": [
+            "Spatial Proximity: 86.0% (4.2 km from estimated source region)",
+            "Temporal Alignment: 35.0% (Transmissions did not closely match release window)",
+            "Trajectory Match: 14.9% (Heading deviation 88.0\u00b0 relative to drift axis)",
+            "Hydrodynamic Leeway: 85.0% compatibility with wind/current dispersion",
+            "Operational state: SOG 2.0 - 5.4 kn (Speed reduction / loitering detected)"
+          ]
+        },
+        {
+          "mmsi": "353123400",
+          "name": "OCEAN TRANSIT",
+          "vessel_type": "Container Feeder",
+          "flag": "Panama",
+          "length_m": 140,
+          "beam_m": 22,
+          "draught_m": 7.5,
+          "min_distance_km": 14.5,
+          "max_ais_gap_hours": 0.2,
+          "temporal_candidate": false,
+          "trajectory_consistent": false,
+          "heading_delta_deg": 92.0,
+          "min_sog": 12.0,
+          "mean_sog": 13.5,
+          "sog": 13.2,
+          "cog": 358.0,
+          "latitude": 13.15,
+          "longitude": 80.46,
+          "timestamp": "2017-01-28T04:00:00Z",
+          "waypoints": [
+            {
+              "time": "2017-01-28T02:00:00Z",
+              "latitude": 13.02,
+              "longitude": 80.45,
+              "sog": 13.4,
+              "cog": 358.0
+            },
+            {
+              "time": "2017-01-28T04:00:00Z",
+              "latitude": 13.15,
+              "longitude": 80.46,
+              "sog": 13.2,
+              "cog": 358.0
+            }
+          ],
+          "rank": 4,
+          "score": 42.4,
+          "overall_score": 42.4,
+          "status": "Moderate Relevance",
+          "relevance_level": "Moderate Relevance",
+          "scores": {
+            "spatial_proximity": 51.7,
+            "temporal_proximity": 35.0,
+            "trajectory_match": 13.7,
+            "wind_compatibility": 65.0,
+            "current_compatibility": 55.0,
+            "overall": 42.4
+          },
+          "evidence": [
+            "Spatial Proximity: 51.7% (14.5 km from estimated source region)",
+            "Temporal Alignment: 35.0% (Transmissions did not closely match release window)",
+            "Trajectory Match: 13.7% (Heading deviation 92.0\u00b0 relative to drift axis)",
+            "Hydrodynamic Leeway: 65.0% compatibility with wind/current dispersion",
+            "Operational state: SOG 12.0 - 13.2 kn"
+          ]
+        }
+      ],
+      "primary_suspect": {
+        "mmsi": "419069700",
+        "name": "MT DAWN KANCHIPURAM",
+        "vessel_type": "Oil Products Tanker",
+        "flag": "India",
+        "length_m": 244,
+        "beam_m": 42,
+        "draught_m": 12.0,
+        "min_distance_km": 0.2,
+        "max_ais_gap_hours": 0.1,
+        "temporal_candidate": true,
+        "trajectory_consistent": true,
+        "heading_delta_deg": 8.0,
+        "min_sog": 0.4,
+        "mean_sog": 5.8,
+        "sog": 0.8,
+        "cog": 285.0,
+        "latitude": 13.2275,
+        "longitude": 80.3628,
+        "timestamp": "2017-01-28T04:00:00Z",
+        "waypoints": [
+          {
+            "time": "2017-01-28T01:00:00Z",
+            "latitude": 13.21,
+            "longitude": 80.45,
+            "sog": 10.5,
+            "cog": 285.0
+          },
+          {
+            "time": "2017-01-28T03:30:00Z",
+            "latitude": 13.225,
+            "longitude": 80.38,
+            "sog": 6.2,
+            "cog": 286.0
+          },
+          {
+            "time": "2017-01-28T04:00:00Z",
+            "latitude": 13.2275,
+            "longitude": 80.3628,
+            "sog": 0.8,
+            "cog": 285.0
+          },
+          {
+            "time": "2017-01-28T06:00:00Z",
+            "latitude": 13.228,
+            "longitude": 80.363,
+            "sog": 0.2,
+            "cog": 280.0
+          }
+        ],
+        "rank": 1,
+        "score": 92.7,
+        "overall_score": 92.7,
+        "status": "Primary Suspect",
+        "relevance_level": "Primary Suspect",
+        "scores": {
+          "spatial_proximity": 99.3,
+          "temporal_proximity": 100.0,
+          "trajectory_match": 83.0,
+          "wind_compatibility": 85.0,
+          "current_compatibility": 90.0,
+          "overall": 92.7
+        },
+        "evidence": [
+          "Spatial Proximity: 99.3% (0.2 km from estimated source region)",
+          "Temporal Alignment: 100.0% (Vessel was present in time window)",
+          "Trajectory Match: 83.0% (Heading deviation 8.0\u00b0 relative to drift axis)",
+          "Hydrodynamic Leeway: 85.0% compatibility with wind/current dispersion",
+          "Operational state: SOG 0.4 - 0.8 kn (Speed reduction / loitering detected)"
+        ]
+      },
+      "status": "Completed"
+    },
+    "forecast": {
+      "ok": true,
+      "model": "T0 Forward Lagrangian Drift & Spreading Model",
+      "label": "PREDICTED \u2014 NOT OBSERVED",
+      "points": [
+        {
+          "hours_ahead": 0,
+          "latitude": 13.2282,
+          "longitude": 80.35,
+          "area_km2": 18.5,
+          "perimeter_km": 28.2,
+          "label": "T0 Observation"
+        },
+        {
+          "hours_ahead": 6,
+          "latitude": 13.14459,
+          "longitude": 80.35,
+          "area_km2": 27.38,
+          "perimeter_km": 38.35,
+          "polygon": [
+            [
+              80.35,
+              13.14459
+            ],
+            [
+              80.35,
+              13.16121
+            ],
+            [
+              80.35,
+              13.16809
+            ],
+            [
+              80.35,
+              13.16121
+            ],
+            [
+              80.35,
+              13.14459
+            ],
+            [
+              80.35,
+              13.12797
+            ],
+            [
+              80.35,
+              13.12109
+            ],
+            [
+              80.35,
+              13.12797
+            ],
+            [
+              80.35,
+              13.14459
+            ]
+          ],
+          "label": "PREDICTED T+6h (NOT OBSERVED)"
+        },
+        {
+          "hours_ahead": 12,
+          "latitude": 13.06098,
+          "longitude": 80.35,
+          "area_km2": 36.26,
+          "perimeter_km": 48.5,
+          "polygon": [
+            [
+              80.35,
+              13.06098
+            ],
+            [
+              80.35,
+              13.08011
+            ],
+            [
+              80.35,
+              13.08803
+            ],
+            [
+              80.35,
+              13.08011
+            ],
+            [
+              80.35,
+              13.06098
+            ],
+            [
+              80.35,
+              13.04186
+            ],
+            [
+              80.35,
+              13.03393
+            ],
+            [
+              80.35,
+              13.04186
+            ],
+            [
+              80.35,
+              13.06098
+            ]
+          ],
+          "label": "PREDICTED T+12h (NOT OBSERVED)"
+        },
+        {
+          "hours_ahead": 24,
+          "latitude": 12.89376,
+          "longitude": 80.35,
+          "area_km2": 54.02,
+          "perimeter_km": 68.81,
+          "polygon": [
+            [
+              80.35,
+              12.89376
+            ],
+            [
+              80.35,
+              12.9171
+            ],
+            [
+              80.35,
+              12.92677
+            ],
+            [
+              80.35,
+              12.9171
+            ],
+            [
+              80.35,
+              12.89376
+            ],
+            [
+              80.35,
+              12.87042
+            ],
+            [
+              80.35,
+              12.86075
+            ],
+            [
+              80.35,
+              12.87042
+            ],
+            [
+              80.35,
+              12.89376
+            ]
+          ],
+          "label": "PREDICTED T+24h (NOT OBSERVED)"
+        }
+      ],
+      "trajectory": [
+        {
+          "hours_ahead": 0,
+          "latitude": 13.2282,
+          "longitude": 80.3633,
+          "area_km2": 18.5,
+          "perimeter_km": 28.2,
+          "label": "T0 Observation"
+        },
+        {
+          "hours_ahead": 6,
+          "latitude": 13.14459,
+          "longitude": 80.31736,
+          "area_km2": 27.38,
+          "perimeter_km": 38.35,
+          "polygon": [
+            [
+              80.34149,
+              13.14459
+            ],
+            [
+              80.33442,
+              13.16121
+            ],
+            [
+              80.31736,
+              13.16809
+            ],
+            [
+              80.30029,
+              13.16121
+            ],
+            [
+              80.29322,
+              13.14459
+            ],
+            [
+              80.30029,
+              13.12797
+            ],
+            [
+              80.31736,
+              13.12109
+            ],
+            [
+              80.33442,
+              13.12797
+            ],
+            [
+              80.34149,
+              13.14459
+            ]
+          ],
+          "label": "PREDICTED T+6h (NOT OBSERVED)"
+        },
+        {
+          "hours_ahead": 12,
+          "latitude": 13.06098,
+          "longitude": 80.27141,
+          "area_km2": 36.26,
+          "perimeter_km": 48.5,
+          "polygon": [
+            [
+              80.29918,
+              13.06098
+            ],
+            [
+              80.29104,
+              13.08011
+            ],
+            [
+              80.27141,
+              13.08803
+            ],
+            [
+              80.25178,
+              13.08011
+            ],
+            [
+              80.24365,
+              13.06098
+            ],
+            [
+              80.25178,
+              13.04186
+            ],
+            [
+              80.27141,
+              13.03393
+            ],
+            [
+              80.29104,
+              13.04186
+            ],
+            [
+              80.29918,
+              13.06098
+            ]
+          ],
+          "label": "PREDICTED T+12h (NOT OBSERVED)"
+        },
+        {
+          "hours_ahead": 24,
+          "latitude": 12.89376,
+          "longitude": 80.17952,
+          "area_km2": 54.02,
+          "perimeter_km": 68.81,
+          "polygon": [
+            [
+              80.21339,
+              12.89376
+            ],
+            [
+              80.20347,
+              12.9171
+            ],
+            [
+              80.17952,
+              12.92677
+            ],
+            [
+              80.15558,
+              12.9171
+            ],
+            [
+              80.14566,
+              12.89376
+            ],
+            [
+              80.15558,
+              12.87042
+            ],
+            [
+              80.17952,
+              12.86075
+            ],
+            [
+              80.20347,
+              12.87042
+            ],
+            [
+              80.21339,
+              12.89376
+            ]
+          ],
+          "label": "PREDICTED T+24h (NOT OBSERVED)"
+        }
+      ],
+      "forecast_horizons": [
+        6,
+        12,
+        24
+      ],
+      "status": "Completed"
+    }
+  },
+  "validation": {
+    "segmentation_metrics": {
+      "iou": 0.862,
+      "dice_f1": 0.925,
+      "precision": 0.908,
+      "recall": 0.942
+    },
+    "drift_metrics": {
+      "origin_geodesic_error_km": 0.3,
+      "drift_forecast_error_24h_km": 2.8,
+      "attribution_top1_correct": true
+    }
+  }
+}
